@@ -17,13 +17,15 @@ A partir d'ici, vous devez me donner votre nom sur github pour que je vous donne
 git push -u origin dev
 
 
-# Utiles
+# Utiles - A utiliser tout les jours / regulierement
 
 
 git pull : Permet de récupérer les modifications en ligne.
 git status : Permet de visualiser les fichiers modifiés.
 git add {fichier} : Permet d'ajouter un fichier a la liste des fichiers pour le commit.
-git commit -m {Message} : Permet de sauvegarder les modifications effectué sur les fichiers ajouté avec la commande précédente.
+  /!\ Ne pas selectionner tout les fichier ! Seulement ceux que vous avez modifié.
+
+git commit -m {Message} : Permet de sauvegarder les modifications effectué sur les fichiers ajoutés avec la commande précédente.
 
 #################################################################################
 
