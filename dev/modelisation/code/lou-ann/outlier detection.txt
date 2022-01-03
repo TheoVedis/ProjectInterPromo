@@ -1,0 +1,32 @@
+robust covariance (elliptic envelope algorithm)
+one class svm
+isolation forest (++ car peut detecter differents clusters contrairement au robust covariance)
+density based :
+random forect
+extreme gradient boosted trees
+k-plus-proches-voisins
+local outlier factor (bien car permet de detecter differents clusters de densite differentes
+
+
+OUTLIER DETECTION
+gaussian distribution
+normale distribution 
+
+ROBUST COVARIANCE/ELLIPTIC ENVELOPE
+try to fit a gaussian distribution (tout ce qui est autour est considéré anomalie)
+
+ISOLATION FOREST
+tres precis tres rapide par rapport aux neural networks
+composé de plusieurs arbres de decision
+le but est d'isoler des observations individuelles
+plus le point est proche de la racine plus il a de chances d'etre different car il requiert moins de partitionnement 
+ceux qui requierent plus de découpages sont souvent lies
+la decision ne repose pas sur un seul arbre mais sur plusieurs (10,20,50, plus il y a d'arbres moins d'anomalies il y a)
+
+LOCAL OUTLIER FACTOR
+ressemble aux k plus proches voisins
+utiles lorsqu'il y a plusieurs densités de points (le cluster avec une densité plus faible ne sera pas detecté comme anomalie)
+dans ce cas la robust covariance ou isolation forect ne sont pas utilisables (ne font pas la distinction entre les differentes densites de chaque cluster)
+  
+
+scikit-learn.org/stable/modules/outlier_detection.html#overview-of-outlier-detection-methods
