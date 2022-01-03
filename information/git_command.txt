@@ -3,6 +3,9 @@
 git config --global user.email "Votre email"
 git config --global user.name "Vote NOM et Prenom"
 
+git remote add origin https://github.com/TheoVedis/ProjectInterPromo.git
+git push -u origin master
+
 
 # Utiles
 
@@ -16,4 +19,7 @@ git commit -m {Message} : Permet de sauvegarder les modifications effectué sur 
 
 #################################################################################
 
+
+
+git 
 
