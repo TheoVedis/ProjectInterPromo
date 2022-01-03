@@ -1,0 +1,19 @@
+# Initialisation
+
+git config --global user.email "Votre email"
+git config --global user.name "Vote NOM et Prenom"
+
+
+# Utiles
+
+git status : Permet de visualiser les fichiers modifiés
+git add {fichier} : Permet d'ajouter un fichier a la liste des fichiers pour le commit
+git commit -m {Message} : Permet de sauvegarder les modifications effectué sur les fichiers ajouté avec la commande précédente.
+
+#################################################################################
+
+	Toujours mettre un message le plus significatif possible !
+
+#################################################################################
+
+
