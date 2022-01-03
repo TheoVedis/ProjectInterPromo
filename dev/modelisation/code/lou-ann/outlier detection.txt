@@ -28,5 +28,6 @@ ressemble aux k plus proches voisins
 utiles lorsqu'il y a plusieurs densités de points (le cluster avec une densité plus faible ne sera pas detecté comme anomalie)
 dans ce cas la robust covariance ou isolation forect ne sont pas utilisables (ne font pas la distinction entre les differentes densites de chaque cluster)
   
+LOCAL OUTLIER FACTOR > ISOLATION FOREST > ROBUST COVARIANCE
 
 scikit-learn.org/stable/modules/outlier_detection.html#overview-of-outlier-detection-methods
