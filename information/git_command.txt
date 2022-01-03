@@ -1,13 +1,28 @@
+# Pré-requis
+ - Installer git : https://git-scm.com/
+ - Avoir / Créer un compte github : https://github.com/
+
 # Initialisation
+
+Ouvrir un invité de commande dans le dossier où vous voulez travailler.
 
 git config --global user.email "Votre email"
 git config --global user.name "Vote NOM et Prenom"
+git clone -b dev https://github.com/TheoVedis/ProjectInterPromo.git
+cd ./ProjectInterPromo/
+git branch : Vous devriez voir "* dev" en vert
+
+A partir d'ici, vous devez me donner votre nom sur github pour que je vous donne l'acces avant de continuer.
+
+git push -u origin dev
 
 
 # Utiles
 
-git status : Permet de visualiser les fichiers modifiés
-git add {fichier} : Permet d'ajouter un fichier a la liste des fichiers pour le commit
+
+git pull : Permet de récupérer les modifications en ligne.
+git status : Permet de visualiser les fichiers modifiés.
+git add {fichier} : Permet d'ajouter un fichier a la liste des fichiers pour le commit.
 git commit -m {Message} : Permet de sauvegarder les modifications effectué sur les fichiers ajouté avec la commande précédente.
 
 #################################################################################
@@ -16,4 +31,8 @@ git commit -m {Message} : Permet de sauvegarder les modifications effectué sur 
 
 #################################################################################
 
+
+# Les commandes suivantes ne vous seront pas utiles pour ce projet mais c'est tout de même bien de les connaitres.
+
+git checkout {branch} : Permet de changer de brancher
 
