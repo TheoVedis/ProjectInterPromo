@@ -1,0 +1,13 @@
+﻿one class svm for outlier detection 
+used for unsupervised  dectection 
+gaussian model  method of density estimation : calcul de la distribution probable avec le théorem de la limite centrale 
+
+
+boundary method
+
+
+ Boundary methods focus on setting boundaries around a few set of points, called target points. These methods attempt to optimize the volume. Boundary methods rely on distances, and hence are not robust to scale variance. K-centers method, NN-d, and SVDD are some of the key examples.
+
+
+K-centers
+In K-center algorithm,small balls with equal radius are placed to minimize the maximum distance of all minimum distances between training objects and the centers. Formally, the following error is minimized,
