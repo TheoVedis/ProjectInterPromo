@@ -1,1 +1,4 @@
 data/*
+workspace.code-workspace
+.vscode/settings.json
+dev/NOTEBOOK_PREPA_PIP_2022/.ipynb_checkpoints/PREPARATION_DATA_2VF-checkpoint.ipynb
