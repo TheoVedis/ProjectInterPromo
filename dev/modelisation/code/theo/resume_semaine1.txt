@@ -1,0 +1,29 @@
+Groupe 2:
+
+Nettoyage des données:
+ - Suppression des données sur le client 2.
+ - Création d'une variable binaire (0: un seul titulaire, 1: deux titulaires).
+ - Remplacement des Nan, petites modifications suivant vos indications.
+ - Suppression des variables comportant beaucoup de Nan irremplacable.
+
+Transformation sur les données:
+ - Binarisation des variables qualitatives, 1 colonne supplémentaire par modalité.
+ - Binarisation des variables comportant beaucoup de zeros.
+ - Transformation au log des variables sur plusieurs ordres de grandeur.
+ - Transformation a la sqrt des variables sur deux ordres de greandeur.
+ - Normalisation des données.
+
+Réduction de dimensions:
+ - ACP : Choix de certains axes pour la reprensation des données. Mais par très concluant car les fraudés ne correspondent pas à des individues extrèmes.
+ - LDA : Trouver les variables les plus explicatives. Même conclusion sur le nuage de point.
+ - Lasso : Avec une regression lasso classique sur des variables normalisées, aucune des variables n'est representatives. En cours, nous experimentons lasso-Path. 
+ - TSNE : Choix de certains axes pour la reprensation des données.
+
+Peu de changement de repartition entre les fraudés et les non fraudés sur ces représentation.
+
+Modelisation:
+ - Baseline alaétoire, pour pouvoir comparer nos modèles.
+ - Test de plusieurs modèles sur les données brut. Résultat proche de la baseline. Conclusion pas de lien pour le moment.
+ - En cours : Test sur les transformations.
+
+A faire : Un travail de features engineering pour déterminer les variables les plus perminentes.
