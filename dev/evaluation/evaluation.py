@@ -34,7 +34,7 @@ def evaluation(
     return tn, fp, fn, tp
 
 
-def evaluation(
+def evaluation2(
     score: np.ndarray, y: np.ndarray, display=False
 ) -> list[float, list[float], list[float], list[float]]:
     """Evaluation with predicted value
