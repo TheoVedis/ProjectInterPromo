@@ -1,0 +1,6 @@
+recherche sur l'explicabilité (notebook pour shap)
+recherche methodes de detection d'outliers
+visualisation variables 
+selection des variables importantes
+selection des variables influencant la fraude ou non
+test de differentes methodes sur sample du total et par catégorie
