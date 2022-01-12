@@ -1,9 +1,33 @@
 ## exemple des graphe
 import plotly.graph_objs as go
 import plotly.express as px
-### exemple graphe 
-data_canada = px.data.gapminder().query("country == 'Canada'")
-fig1 = px.bar(data_canada, x='year', y='pop')
+import pandas as pd
+#from plotly.offline import iplot
+#from plotly.offline import iplot
+### PREMIER GRAPHE 
+
+df_fig1 = pd.read_csv("data/G2_ACP.csv" , sep =';')
+df_ech = df_fig1.sample(100000)
+df_ech.columns = ["Axe_1", "Axe_2", "Axe_3", "F/NF"]
+fig1  = go.Figure([ go.Scatter3d(
+                 mode = 'markers',
+                 x = df_ech[df_ech["F/NF"]=='Not_Fraude']["Axe_1"],
+                 y = df_ech[df_ech["F/NF"]=='Not_Fraude']["Axe_2"],
+                 z = df_ech[df_ech["F/NF"]=='Not_Fraude']["Axe_3"],
+                 marker = dict(
+                           opacity = 0.2
+                         )),
+             go.Scatter3d(
+                 mode = 'markers',
+                 x = df_ech[df_ech["F/NF"]=='Fraude']["Axe_1"],
+                 y = df_ech[df_ech["F/NF"]=='Fraude']["Axe_2"],
+                 z = df_ech[df_ech["F/NF"]=='Fraude']["Axe_3"],
+                 marker = dict(
+                           opacity = 0.5
+                          ))
+       ])
+#iplot(data)
+
 ### exemple graphe 
 df = px.data.iris()
 fig2 = px.scatter(df, x="sepal_width", y="sepal_length", color="species",
@@ -36,3 +60,6 @@ fig7 = px.imshow(data,
                 y=['Morning', 'Afternoon', 'Evening']
                )
 fig7.update_xaxes(side="top")
+
+
+
