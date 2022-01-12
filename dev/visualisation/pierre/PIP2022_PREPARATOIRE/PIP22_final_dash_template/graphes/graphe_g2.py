@@ -9,19 +9,18 @@ import pandas as pd
 df_fig1 = pd.read_csv("data/G2_ACP.csv" , sep =';')
 df_ech = df_fig1.sample(100000)
 df_ech.columns = ["Axe_1", "Axe_2", "Axe_3", "F/NF"]
-fig1  = go.Figure([ go.Scatter3d(
+fig1  = go.Figure([ go.Scatter(
                  mode = 'markers',
                  x = df_ech[df_ech["F/NF"]=='Not_Fraude']["Axe_1"],
                  y = df_ech[df_ech["F/NF"]=='Not_Fraude']["Axe_2"],
-                 z = df_ech[df_ech["F/NF"]=='Not_Fraude']["Axe_3"],
                  marker = dict(
                            opacity = 0.2
                          )),
-             go.Scatter3d(
+             go.Scatter(
                  mode = 'markers',
                  x = df_ech[df_ech["F/NF"]=='Fraude']["Axe_1"],
                  y = df_ech[df_ech["F/NF"]=='Fraude']["Axe_2"],
-                 z = df_ech[df_ech["F/NF"]=='Fraude']["Axe_3"],
+                 
                  marker = dict(
                            opacity = 0.5
                           ))
